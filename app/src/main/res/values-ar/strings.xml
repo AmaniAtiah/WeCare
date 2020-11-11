@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">صحتك تهمنا</string>
+    <string name="times_notified_today">تنبيهات اليوم</string>
+    <string name="weekly_avg">معد الأسبوع</string>
+    <string name="daily_data">البيانات اليومية</string>
+    <string name="day">اليوم</string>
+    <string name="notification_channel_name">تنبيهات اليوم</string>
+    <string name="notification_channel_description">هذه الفناه تقوم بتنبيه المستخدم عند استخدام الهاتف لأكثر من 25 دقيقة من فتح الشاشة</string>
+    <string name="Break">قم بعمل الرياضه لمدة ١٠ دقائق</string>
+
+
+</resources>
