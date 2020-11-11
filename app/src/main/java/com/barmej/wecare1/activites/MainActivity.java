@@ -70,8 +70,7 @@ public class MainActivity extends AppCompatActivity {
             totalNumberOfNotification += userData.getTodayNotification();
         }
         avg = totalNumberOfNotification / userDataList.size();
-        String numString = String.format("%,.2f",avg);
-        averageTextView.setText(String.valueOf(numString));
+        averageTextView.setText(String.valueOf(avg));
 
     }
 
