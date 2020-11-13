@@ -10,7 +10,6 @@
     <string name="notification_channel_description">This channel alerts the user when using the phone for more than 25 minutes after opening the screen</string>
     <string name="Break">Do the sport for 10 minutes</string>
 
-
     <string-array name="dates">
         <item>28/04/2020</item>
         <item>29/04/2020</item>

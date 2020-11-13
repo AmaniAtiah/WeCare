@@ -15,6 +15,7 @@ import com.barmej.wecare1.data.entity.UserData;
 import com.barmej.wecare1.utils.NotificationUtils;
 import com.barmej.wecare1.viewmodel.ViewModel;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -70,7 +71,8 @@ public class MainActivity extends AppCompatActivity {
             totalNumberOfNotification += userData.getTodayNotification();
         }
         avg = totalNumberOfNotification / userDataList.size();
-        averageTextView.setText(String.valueOf(avg));
+        DecimalFormat decimalFormat = new DecimalFormat("0.00");
+        averageTextView.setText(decimalFormat.format(avg));
 
     }
 
