@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="8dp">
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="8dp">
 
     <TextView android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -20,7 +25,7 @@
         android:layout_gravity="center"
         android:gravity="center"
         android:textSize="100sp"
-        android:text="@string/default_number_04"
+        android:text="@string/default_number_0"
         android:textStyle="bold"
         android:padding="50dp"
         android:textColor="@android:color/black"
@@ -40,7 +45,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/default_number_03"
+        android:text="@string/default_number_0"
         android:textSize="20sp"
         android:gravity="center"
         android:padding="20dp"
@@ -60,4 +65,6 @@
         android:layout_margin="20dp"
         android:background="@drawable/rounded_button"/>
 
-</LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

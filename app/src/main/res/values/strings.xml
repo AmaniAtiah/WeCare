@@ -1,9 +1,8 @@
 <resources>
     <string name="app_name">We Care1</string>
     <string name="times_notified_today">Today\'s Notifications</string>
-    <string name="default_number_04" translatable="false">04</string>
+    <string name="default_number_0" translatable="false">0</string>
     <string name="weekly_avg">Weekly Average</string>
-    <string name="default_number_03" translatable="false">03</string>
     <string name="daily_data">Daily Data</string>
     <string name="day">Day</string>
     <string name="notification_channel_name">Your health is important to us</string>

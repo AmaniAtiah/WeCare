@@ -22,8 +22,13 @@
             </intent-filter>
         </activity>
 
-        <!-- TODO: service added here -->
         <service android:name=".screen.ScreenStatusWorker"/>
+
+        <receiver android:name=".screen.BootCompletedReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
 
     </application>
 

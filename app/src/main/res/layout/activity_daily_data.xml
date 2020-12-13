@@ -36,7 +36,7 @@
         android:layout_centerInParent="true"
         android:padding="50dp"
         android:textColor="@android:color/black"
-        android:text="@string/default_number_03"
+        android:text="@string/default_number_0"
         android:elevation="2dp"
         android:translationZ="2dp"
         android:background="@drawable/circle_big_with_shadow" android:layout_marginEnd="8dp"

@@ -15,8 +15,6 @@ import java.util.concurrent.TimeUnit;
 
 public class ScreenUtils {
 
-    private static final String TAG = ScreenUtils.class.getSimpleName();
-
     public static void startScreen(Context context) {
         if (!isMyServiceRunning(context, ScreenStatusWorker.class)) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
