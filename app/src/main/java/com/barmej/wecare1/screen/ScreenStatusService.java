@@ -23,7 +23,7 @@ import com.barmej.wecare1.R;
 import com.barmej.wecare1.activites.MainActivity;
 
 
-public class ScreenStatusWorker extends Service {
+public class ScreenStatusService extends Service {
 
     private BroadcastReceiver mBroadcastReceiver;
 
@@ -73,9 +73,9 @@ public class ScreenStatusWorker extends Service {
             @Override
             public void onReceive(Context context, Intent intent) {
                 if (intent.getAction().equals(Intent.ACTION_SCREEN_OFF)) {
-                    ScreenUtils.stop(ScreenStatusWorker.this);
+                    ScreenUtils.stop(ScreenStatusService.this);
                 } else if (intent.getAction().equals(Intent.ACTION_SCREEN_ON)) {
-                    ScreenUtils.schedule(ScreenStatusWorker.this);
+                    ScreenUtils.schedule(ScreenStatusService.this);
                 }
             }
         };
@@ -88,7 +88,7 @@ public class ScreenStatusWorker extends Service {
         PowerManager pm = (PowerManager) getSystemService(Context.POWER_SERVICE);
         boolean isScreenOn = pm.isInteractive();
         if (isScreenOn) {
-            ScreenUtils.schedule(ScreenStatusWorker.this);
+            ScreenUtils.schedule(ScreenStatusService.this);
         }
     }
 

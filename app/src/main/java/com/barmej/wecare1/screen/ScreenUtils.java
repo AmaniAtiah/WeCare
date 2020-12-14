@@ -16,11 +16,11 @@ import java.util.concurrent.TimeUnit;
 public class ScreenUtils {
 
     public static void startScreen(Context context) {
-        if (!isMyServiceRunning(context, ScreenStatusWorker.class)) {
+        if (!isMyServiceRunning(context, ScreenStatusService.class)) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                context.startForegroundService(new Intent(context, ScreenStatusWorker.class));
+                context.startForegroundService(new Intent(context, ScreenStatusService.class));
             } else {
-                context.startService(new Intent(context, ScreenStatusWorker.class));
+                context.startService(new Intent(context, ScreenStatusService.class));
             }
         }
     }
@@ -45,7 +45,7 @@ public class ScreenUtils {
                 .setRequiredNetworkType(NetworkType.CONNECTED)
                 .build();
         PeriodicWorkRequest periodicWorkRequest
-                = new PeriodicWorkRequest.Builder(ScreenWorkers.class, 25, TimeUnit.MINUTES)
+                = new PeriodicWorkRequest.Builder(ScreenService.class, 25, TimeUnit.MINUTES)
                 .setInitialDelay(25, TimeUnit.MINUTES)
                 .setConstraints(constraints)
                 .build();

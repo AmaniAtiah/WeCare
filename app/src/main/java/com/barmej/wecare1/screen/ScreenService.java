@@ -19,9 +19,9 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-public class ScreenWorkers extends Worker {
+public class ScreenService extends Worker {
 
-    public ScreenWorkers(@NonNull Context context,@NonNull WorkerParameters workerParams) {
+    public ScreenService(@NonNull Context context,@NonNull WorkerParameters workerParams) {
         super(context,workerParams);
     }
 

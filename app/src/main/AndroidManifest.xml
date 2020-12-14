@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".screen.ScreenStatusWorker"/>
+        <service android:name=".screen.ScreenStatusService"/>
 
         <receiver android:name=".screen.BootCompletedReceiver" >
             <intent-filter>
